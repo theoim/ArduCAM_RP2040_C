@@ -46,6 +46,7 @@ int main() {
     ArduCAM_Init_Model(&myCAM);  // 기본 초기화
     ArduCAM_InitWithModelAndCS(&myCAM, OV2640, CS);  // 모델과 CS 지정하여 초기화
     ArduCAM_init();
+    
 
 
 

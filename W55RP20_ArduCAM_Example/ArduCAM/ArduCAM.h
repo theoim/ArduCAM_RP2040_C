@@ -330,12 +330,17 @@
 
 
 /*spi pin source*/
-#define SPI_PORT spi1
-#define PIN_SCK  10
-#define PIN_MOSI 11
-#define PIN_MISO 8
-#define PIN_CS   9
+// #define SPI_PORT spi1
+// #define PIN_SCK  10
+// #define PIN_MOSI 11
+// #define PIN_MISO 8
+// #define PIN_CS   9
 
+#define SPI_PORT spi0
+#define PIN_SCK  2
+#define PIN_MOSI 3
+#define PIN_MISO 4
+#define PIN_CS   5
 
 
 /*i2c pin source */
@@ -387,6 +392,7 @@ void ArduCAM_Init_Model(ArduCAM *cam);
 // 매개변수가 있는 초기화 함수
 void ArduCAM_InitWithModelAndCS(ArduCAM *cam, uint8_t model, int CS);
 void ArduCAM_InitCAM(ArduCAM* cam);
+void ArduCAM_init(void);
 void ArduCAM_set_format(ArduCAM* cam, byte fmt);
 void ArduCAM_CS_HIGH(ArduCAM* cam);
 void ArduCAM_CS_LOW(ArduCAM* cam);
